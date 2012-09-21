@@ -1,8 +1,11 @@
-ForksAndTent::Application.routes.draw do
-  resources :posts
+Blog::Application.routes.draw do
+  get "comments/create"
 
-  get "home/index"
-  root :to => 'home#index'
+  get "comments/destroy"
+
+  resources :posts do 
+  resources :comments
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -53,7 +56,7 @@ ForksAndTent::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-
+  # root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"
 

@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-ForksAndTent::Application.config.secret_token = '4885c61dac7e9f63108154458b5e8dbd8f1834461575682e36a5d3c13fe943dcd8f84a1ed0fe0faae469e568fb30de646e17136e1d24ef89234886fb8e5f94ee'
+Blog::Application.config.secret_token = 'c9003c3294124d033a72e0f1f58747f4823a89d47a038be9b45e39111ce50451da800e5724218f8a34b2f8701d03a560efc2f9dcf09f70bd7142eac2213acccb'
